@@ -10,4 +10,8 @@ class SchoolClassesController < ApplicationController
   def new
     @school_class = SchoolClass.new
   end
+
+  def edit
+    @school_class = SchoolClass.find(params[:id])
+  end
 end
